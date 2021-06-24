@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+#Big{
+    display: flex;
+    justify-content: center;
+}
+h1{
+   text-align: center;
+}
+body{
+    background: linear-gradient(to right,rgb(240, 54, 224),rgb(18, 241, 241));
+    font-family: 'Dancing Script', cursive;
+}
+button{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+button:hover{
+    background-color: grey;
+    color: black;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    text-align: center;
+}

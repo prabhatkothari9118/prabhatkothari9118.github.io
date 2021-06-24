@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right,rgb(233, 160, 227),rgb(169, 226, 226));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    flex-direction: column;
+}
+.clocks{
+    width: 400px;
+    height: 400px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.9);
+   position: relative;
+
+}
+.clocks .numbers{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.49rem;
+}
+.clocks .numbers1{
+    transform: rotate(30deg);
+}
+.clocks .numbers2{
+    transform: rotate(60deg);
+}
+.clocks .numbers3{
+    transform: rotate(90deg);
+}
+.clocks .numbers4{
+    transform: rotate(120deg);
+}
+.clocks .numbers5{
+    transform: rotate(150deg);
+}
+.clocks .numbers6{
+    transform: rotate(180deg);
+}
+.clocks .numbers11{
+    transform: rotate(-30deg);
+}
+.clocks .numbers10{
+    transform: rotate(-60deg);
+}
+.clocks .numbers9{
+    transform: rotate(-90deg);
+}
+.clocks .numbers8{
+    transform: rotate(-120deg);
+}
+.clocks .numbers7{
+    transform: rotate(-150deg);
+}
+.clocks .hands{
+    --rotate:0;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+
+   
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotate)*1deg));
+    border: 1.5px solid rgba(255,255,255,0.9);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    z-index: 10;
+
+}
+.clocks .hands.seconds {
+height: 44%;
+width: 5.1px;
+background-color: rgb(238, 149, 149);
+}
+.clocks .hands.minutes {
+height: 41%;
+width: 7.1px;
+background-color: black;
+}
+.clocks .hands.hours {
+height: 34%;
+width: 9.9px;
+background-color: black;
+z-index: 11;
+}
+.clocks::before{
+ position: absolute;
+ background-color: black;
+ z-index: 12;
+ width: 10px;
+ height: 10px;
+content: '';
+top: 50%;
+right: 50%;
+transform: translate(50%,-50%);
+border: 2px solid black;
+border-radius: 50%;
+
+}
+button{
+    display: block;
+    padding: 10px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#colorChange{
+    color: white;
+    display: inline-block;
+}
+#modify{
+
+  position: absolute;
+  left: 90%;
+ 
+
+}
+#btn2{
+    color: white;
+}
+button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.disable{
+    color: white;
+    display: inline-block;
+
+  
+}
+.hr{
+  height: 32%;
+}
+.min{
+height: 38%;
+}
+.sec{
+height: 39%;
+}
+.size{
+    height: 300px;
+    width: 300px;
+}
+.backTo{
+    color: white;
+}
